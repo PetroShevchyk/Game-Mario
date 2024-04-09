@@ -1,0 +1,14 @@
+<MenuScreen>:
+    BoxLayout:
+        Button:
+            text: "Старт"
+            on_release: app.root.current = 'game'
+
+<GameScreen>:
+    BoxLayout:
+        # Тут можна додати елементи управління грою, наприклад, кнопки для руху
+        Label:
+            text: "Тут буде гра"
+        Button:
+            text: "Назад до меню"
+            on_release: app.root.current = 'menu'
